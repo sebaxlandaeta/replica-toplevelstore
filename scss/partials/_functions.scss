@@ -1,0 +1,22 @@
+@function formatoBoton($ancho, $r: 215, $g: 215, $b: 215) {
+  
+    @if ($r < 0 or $r > 225) or ($g < 0 or $g > 225) or ($b < 0 or $b > 225) {
+        @warn "ADVERTENCIA: Uno de los valores RGB (#{$r}, #{$g}, #{$b}) está fuera del rango [0 - 255].";
+    }
+
+    $resultado-multiplicacion: $ancho * 5;
+
+    @if $resultado-multiplicacion < 100px { /*Si el valor de la variable $anchoBoton es menor a 20px se mostrara un error.*/
+        @error "El valor del ancho debe ser mayor o igual a 20";
+    }
+
+    $width-final: null;
+    @if $resultado-multiplicacion > 125px {
+        $width-final: $ancho;
+    }
+
+    @return (
+        ancho: $width-final,
+        fondo: rgb($r, $g, $b)
+    );
+}

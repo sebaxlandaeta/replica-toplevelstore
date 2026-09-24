@@ -1,0 +1,12 @@
+@mixin boton-estilo-mixin { /*En el desafio dice que este mixin se utilizara como en la imagen adjunta pero no hay ninguna imagen*/
+  border-radius: 1em 0 1em 0; 
+  padding: 2em; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+@mixin centrado {
+    justify-content: center;
+    align-items: center;
+}
