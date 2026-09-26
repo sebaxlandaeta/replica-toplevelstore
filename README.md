@@ -20,8 +20,6 @@ El proyecto fue creado como solución a un desafío práctico de la academia **[
 
 * 📐 **CSS Flexbox & CSS Grid**: Layouts responsivos para la barra de navegación, el banner promocional, el catálogo de juegos y el footer.
 
-* 📦 **Git & GitHub**: Control de versiones y despliegue del proyecto.
-
 ---
 
 ## 📋 Resumen del Desafío Técnico (CADIF1) 📝
